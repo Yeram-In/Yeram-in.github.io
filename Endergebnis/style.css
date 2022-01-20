@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap');
+
+
+* {
+  box-sizing: border-box;
+	border-radius: 25px;
+}
+
+body {
+	 
+
+  background-color: #B46FB4;
+  color: #fff;
+  font-family:'Source Sans Pro', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+}
+p2{
+	color: black;
+}
+
+h1 {
+  line-height: 1.4;
+}
+
+h2 {
+  padding-bottom: 30px;
+}
+
+.btn {
+  border: 0;
+  background-color: #fff;
+  color: #B46FB4;
+  padding: 15px 20px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.screen.up {
+  margin-top: -110vh;
+}
+
+.birds-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.birds-list li {
+  margin: 10px;
+}
+
+.btn-audio {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  width: 90px;
+  height: 130px;
+	
+}
+
+.btn-audio:hover {
+  background-color: #fff;
+  color:yellowgreen;
+}
+
+.btn-audio:active {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.active {
+  border: 2px solid #F5F546;
+}
+
+audio {
+  scale: 164%;
+}
+
+.correct-answer {
+  border-color: gold;
+}
+
+.correct-answer-text {
+  text-decoration: underline;
+  color: gold;
+}
+
+.incorrect-answer {
+  border-color: red;
+}
+
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.bird-border-correct-answer {
+  border-color: green;
+}
+
+.bird-border-incorrect-answer {
+  border-color: red;
+}
+
+.secret-bird-name,
+.possible-bird-name {
+  text-transform: capitalize;
+}
+
+.piano{
+	display: flex;
+	
+  justify-content: center;
+}
+
+.key{
+	height: calc(var(--width)*2);
+		width:var(--width);
+}
+
+.white{
+	--width: 100px;
+	height: 100px;
+	background-color: white;
+	border: 1px solid #333;
+	
+}
+.white.active{
+	background-color: #ccc;
+}
+
+.black{
+	--width: 60px;
+	height: 60px;
+	background-color: #598B7F;
+	margin-left: calc(var(--width)/-2);
+	margin-right: calc(var(--width)/-2);
+	z-index: 1; 
+	
+}
+.black.active{
+	background-color: #035022;
+}
